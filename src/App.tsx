@@ -8,7 +8,7 @@ import './App.css';
  */
 interface IState {
   data: ServerRespond[],
-  showGraph : Boolean,
+  showGraph : boolean,
 }
 
 /**
@@ -48,7 +48,7 @@ class App extends Component<{}, IState> {
         // Previous data in the state and the new data from server
         this.setState({
           data: serverResponds,
-          showGraph: true
+          showGraph: true,
         });
       });
       x++;
